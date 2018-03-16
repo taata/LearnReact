@@ -1,26 +1,27 @@
 {
-  "name": "Treinamento",
+  "name": "CourseJs",
   "version": "1.0.0",
-  "description": "Treinamento",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/webpack --colors --progress",
-    "watch": "npm run build -- --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taata/CourseJs.git"
   },
   "keywords": [],
-  "author": "Tainá",
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-install": "2.1.0",
-    "babel-loader": "^7.1.4",
-    "babel-preset-es2015-native-modules": "^6.9.4",
-    "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.11"
+  "bugs": {
+    "url": "https://github.com/taata/CourseJs/issues"
   },
+  "homepage": "https://github.com/taata/CourseJs#readme",
   "dependencies": {
-    "extract-text-webpack-plugin": "^3.0.2",
-    "ramda": "^0.22.1",
-    "universal-webpack": "^0.6.1"
+    "webpack": "^4.1.1",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.0.12"
   }
 }

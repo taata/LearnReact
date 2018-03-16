@@ -1,24 +1,9 @@
-const webpack = require('webpack');
-
-module.exports = {
-    entry: {
-        filename: './app.js'
-    },
+module.exports ={
+    entry: [
+        './src/index.jsx'
+    ],
     output: {
-        filename: './build.js'
-    },
-    module: {
-        loaders: [{
-            test: /\.js$/,
-            exclude: /node_modules/,
-            loader: 'babel-loader',
-            query: {
-                presets: [
-                    ['es2015', {
-                        modules: false
-                    }]
-                ]
-            }
-        }]
+        filename: 'bundle.js',
+        path: __dirname
     }
 }
