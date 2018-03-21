@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
+import ReactDOM, { render } from 'react-dom';
 
-class App extends React.Component {
+import ComponentTest from './components/componentTest';
+
+class App extends Component {
     render() {
         return(
-            <h2> Oláaaaa! </h2>
+          <ComponentTest />
         )
     }
 }
 
-React.render(
+render(
     <App />,
     document.querySelector('#app')
 );

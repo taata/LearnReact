@@ -1,1 +1,1 @@
-# CourseJs
+# LearnReact
