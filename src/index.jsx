@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM, { render } from 'react-dom';
+import { render } from 'react-dom';
 
 import ComponentTest from './components/componentTest';
 
@@ -14,14 +14,14 @@ class App extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick() { 
-       this.setState({
+    handleClick() {
+        this.setState({
             msg: 'React State change'
-       });
+        });
     }
 
     render() {
-        return(
+        return (
             <div>
                 <h3> {this.state.msg} </h3>
                 <ComponentTest myMessage={this.state.msg} />
