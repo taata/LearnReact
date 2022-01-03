@@ -1,23 +1,35 @@
-THIS PROJECT IS IN MAINTENANCE MODE. We accept pull-requests for Bug Fixes **ONLY**. NO NEW FEATURES ACCEPTED!
+# Template - Pull request
 
-<!--- Provide a general summary of your changes in the Title above -->
+## Task no JIRA
 
-## Description
-<!--- Describe your changes in detail -->
+- [NMD-5669](https://outinvest.atlassian.net/browse/NMD-5669)
 
-## Related Issue
-<!--- This project only accepts pull requests related to open issues -->
-<!--- If suggesting a new feature or change, please discuss it in an issue first -->
-<!--- If fixing a bug, there should be an issue describing it with steps to reproduce -->
-<!--- Please link to the issue here: -->
+## Evidências
 
-## Motivation and Context
-<!--- Why is this change required? What problem does it solve? -->
-<!--- If it fixes an open issue, please link to the issue here. -->
+_Tire print das telas se tiver_
 
-## How Has This Been Tested?
-<!--- Please describe in detail how you tested your changes. -->
-<!--- Include details of your testing environment, and the tests you ran to -->
-<!--- see how your change affects other areas of the code, etc. -->
+## Como testar
 
-## Screenshots (if appropriate):
+_Como testar a implementação de uma visão do usuário final, colocar usuário de teste, link do backoffice, etc_
+
+- Abrir a tela de Customer
+- Procurar pelo customer_id = '07b878f8-1683-4c88-805b-f3586caf944a' e clicar em "Detalhes"
+
+## Permissionamento novo
+
+_Inserir permissionamentos e checar se os mesmos foram criados em PROD_
+
+- Tela de transfer: `read:transfers:page`
+
+## PR migrations
+
+_Copie os links dos PR's de migrations caso tenha e verifique se o deploy foi feito antes de fazer o deploy do backoffice_
+
+- [Migrations transfer](https://github.com/nomad-bank/nomad_migrations/pull/563)
+- [Migrations statements](https://github.com/nomad-bank/nomad_migrations/pull/563)
+
+## Impacto das tasks
+
+- Tela de transfer
+- Alertas no header
+- Card de Banking nos detalhes do customer
