@@ -1,10 +1,3 @@
----
-name: Pull request template
-about: Pull request template
-title: feat, bug, chore
-labels: "chore"
----
-
 # Template - Pull request
 
 ## Task no JIRA
