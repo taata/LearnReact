@@ -1,3 +1,12 @@
+---
+name: Custom issue template
+about: Describe this issue template's purpose here.
+title: ''
+labels: 'chore, enhancement, bug'
+assignees: '@taata'
+
+---
+
 # Template - Pull request
 
 ## Task no JIRA
