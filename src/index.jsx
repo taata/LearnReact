@@ -25,7 +25,7 @@ class App extends Component {
       <div>
         <h3> {this.state.msg} </h3>
         <ComponentTest myMessage={this.state.msg} />
-        <button onClick={this.handleClick}> Save! </button>
+        <button onClick={this.handleClick}> Save!! </button>
       </div>
     );
   }
