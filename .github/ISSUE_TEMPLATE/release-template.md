@@ -3,7 +3,7 @@ name: Release template
 about: Release template
 title: Release
 labels: release
-assignees: ''
+assignees: taata
 
 ---
 
