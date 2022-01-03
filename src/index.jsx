@@ -1,37 +1,34 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
+import React, { Component } from "react";
+import { render } from "react-dom";
 
-import ComponentTest from './components/componentTest';
+import ComponentTest from "./components/componentTest";
 
 class App extends Component {
-    constructor() {
-        super();
+  constructor() {
+    super();
+    console;
+    this.state = {
+      msg: "React State",
+    };
 
-        this.state = {
-            msg: 'React State'
-        };
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-        this.handleClick = this.handleClick.bind(this);
-    }
+  handleClick() {
+    this.setState({
+      msg: "React State change",
+    });
+  }
 
-    handleClick() {
-        this.setState({
-            msg: 'React State change'
-        });
-    }
-
-    render() {
-        return (
-            <div>
-                <h3> {this.state.msg} </h3>
-                <ComponentTest myMessage={this.state.msg} />
-                <button onClick={this.handleClick}> Save </button>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <h3> {this.state.msg} </h3>
+        <ComponentTest myMessage={this.state.msg} />
+        <button onClick={this.handleClick}> Save!! </button>
+      </div>
+    );
+  }
 }
 
-render(
-    <App />,
-    document.querySelector('#app')
-);
+render(<App />, document.querySelector("#app"));
