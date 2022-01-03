@@ -1,35 +1,43 @@
-Ao abrir a release de “dev -> master” é necessário ter enviado a mensagem do “O que foi feito” no canal de #product-backoffice para validar tarefas em DEV para assim, ao ter OK que tudo está correto, mesclar o PR para que o deploy seja feito.
+---
+name: Pull request template
+about: Pull request template
+title: feat, bug, chore
+labels: ""
+assignees: ""
+---
 
-# Template - Release
+# Template - Pull request
 
-## O que foi feito
+## Task no JIRA
 
-_Explique resumidamente, de maneira não técnica, as tarefas contidas nesta release. Esse texto será enviado no #backoffice_
+- [NMD-5669](https://outinvest.atlassian.net/browse/NMD-5669)
 
-- Página de Transfer
-  - Tela na arquitetura nova
-  - Adicionado nos detalhes da transação os campos:
-    - Razão
-    - Descrição
-    - Informações do pagamento INBOUND
-  - Nova permissão criada: `read:transfers:page`
+## Evidências
 
-## Changelog
+_Tire print das telas se tiver_
 
-_Adicione os números das PRs que estão nessa release_
+## Como testar
 
-- #123
-- #234
-- #345
+_Como testar a implementação de uma visão do usuário final, colocar usuário de teste, link do backoffice, etc_
+
+- Abrir a tela de Customer
+- Procurar pelo customer_id = '07b878f8-1683-4c88-805b-f3586caf944a' e clicar em "Detalhes"
+
+## Permissionamento novo
+
+_Inserir permissionamentos e checar se os mesmos foram criados em PROD_
+
+- Tela de transfer: `read:transfers:page`
 
 ## PR migrations
 
-_Copie o conteúdo desta seção de todas as PRs presentes nesta release_
+_Copie os links dos PR's de migrations caso tenha e verifique se o deploy foi feito antes de fazer o deploy do backoffice_
+
+- [Migrations transfer](https://github.com/nomad-bank/nomad_migrations/pull/563)
+- [Migrations statements](https://github.com/nomad-bank/nomad_migrations/pull/563)
 
 ## Impacto das tasks
 
-_Copie o conteúdo desta seção de todas as PRs presentes nesta release_
-
-## Permissionamentos novos
-
-_Copie o conteúdo desta seção de todas as PRs presentes nesta release_
+- Tela de transfer
+- Alertas no header
+- Card de Banking nos detalhes do customer
